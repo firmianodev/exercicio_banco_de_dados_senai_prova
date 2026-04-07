@@ -47,6 +47,7 @@ def main():
                 venda(cursor, conn, id, quantidade_venda)
 
         if deseja_continuar():
+            conn.close()
             break
         
 def deseja_continuar():
